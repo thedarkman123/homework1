@@ -6,7 +6,8 @@ import java.util.HashMap;
 import org.testng.annotations.DataProvider;
 
 public class DataProviders {
-	public static ExcelReader excel  = new ExcelReader(System.getProperty("user.dir") + "\\src\\test\\resources\\excel\\testdata.xlsx");
+	//just for this exercise purposes, the excel initiated here
+	private ExcelReader excel  = new ExcelReader(System.getProperty("user.dir") + "\\src\\test\\resources\\excel\\testdata.xlsx");
 	
 	@DataProvider(name="dp")
 	public Object[][] getData(Method m){
