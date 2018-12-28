@@ -17,6 +17,9 @@ public class LoginPage extends BasePage{
 	@FindBy(css=".login-button")
 	@CacheLookup
 	private WebElement btnLogin;
+	@FindBy(css=".try12345")
+	@CacheLookup
+	private WebElement try1234;
 	
 	public LoginPage(WebDriver driver) {
 		super(driver);
